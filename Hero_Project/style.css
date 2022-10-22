@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'anandaregular';
+    src: url('Assets/Webfonts/Ananda_Fontspace/ananda-el1n-webfont.woff2') format('woff2');
+         /* url('ananda-el1n-webfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+
+:root{
+    /* COLOR */
+    --main-bg-color: #AEB6BF;
+    /* FONT */
+    --header-title-font: "anandaregular";
+    --body-font: "Nunito"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: var(--body-font);
+}
+/* HEADER/NAV */
+#header-wrapper {
+    /* STYLING */
+    background-image: url("images/white-shirt-hanger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* POSITIONING */
+    display: flex;
+    justify-content: center;
+}
+#main-logo-header {
+    font-family: var(--header-title-font), sans-serif;
+}
